@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v10.1.0
         with:
           enable-cache: true
       # ruff check, ruff format --check, ty check -- exactly `make lint` locally.
@@ -38,7 +38,7 @@ jobs:
         python-version: ["3.13", "3.14"]
     steps:
       - uses: actions/checkout@v5
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v10.1.0
         with:
           enable-cache: true
           python-version: ${{ matrix.python-version }}
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v10.1.0
         with:
           enable-cache: true
       # Starts the single-node broker from compose.test.yml, runs the tests
