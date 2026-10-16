@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.13"
 
 [[package]]
@@ -387,19 +387,20 @@ wheels = [
 
 [[package]]
 name = "edutap-observability-settings"
-version = "0.1.6"
+version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "edutap-data-models" },
     { name = "logfire" },
+    { name = "opentelemetry-api" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "sentry-sdk" },
     { name = "structlog" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ff/25/46f52fdeed960eb00dd06661026710c0924ed9f10bae4e772d25a816b688/edutap_observability_settings-0.1.6.tar.gz", hash = "sha256:ece00dc4a45116597d02ccd0f7913ed035362791b560d51bea26046e10750905", size = 44528, upload-time = "2026-08-28T22:45:55.258Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/44/23/3a34db45615e31796e54cebe2042c94fb71d271f1a30ab223830e2d0e5e5/edutap_observability_settings-0.2.1.tar.gz", hash = "sha256:37c777b623f2ba5cd3851f26639b66896e926632f0cca3a867b31eacd07da9e7", size = 51685, upload-time = "2026-10-12T21:43:08.691Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/02/ee7107d835716b62567a9dceea470946086b3f2b86f0c309d67eff578697/edutap_observability_settings-0.1.6-py3-none-any.whl", hash = "sha256:ef66142af72809563b0e7d9fc74574ba3cf97ff08ba4f66e439c681a6282b14b", size = 19838, upload-time = "2026-08-28T22:45:53.708Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/c8/a3f1698c6ff110aa6b6d63863b19ed69fb730ba34594cad36b905b9ac54a/edutap_observability_settings-0.2.1-py3-none-any.whl", hash = "sha256:e72ed4d2d12829e91d287f6bd5de7aca5b072d58571f1d5de57bb50621d9c100", size = 22899, upload-time = "2026-10-12T21:43:07.435Z" },
 ]
 
 [package.optional-dependencies]
@@ -471,7 +472,7 @@ typecheck = [
 requires-dist = [
     { name = "aiokafka" },
     { name = "edutap-data-models", specifier = ">=0.3.0" },
-    { name = "edutap-observability-settings", extras = ["fastapi"], specifier = ">=0.1.6,<0.2" },
+    { name = "edutap-observability-settings", extras = ["fastapi"], specifier = ">=0.2.1,<0.3" },
     { name = "edutap-wallet-google", extras = ["callback"], specifier = ">=1.0.0b1" },
     { name = "fastapi", specifier = ">=0.115.7" },
     { name = "pydantic", specifier = ">=2.0" },
